@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela - QA</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" rel="stylesheet"> <!-- Devicons -->
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="p-6 text-center">
@@ -13,62 +14,66 @@
             <!-- Foto de perfil -->
             <img src="img/foto-perfil.jpg" alt="Gabriela" class="rounded-full w-32 h-32 mx-auto">
             <h1 class="mt-4 text-3xl font-bold">Gabriela</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-400">Analista de Testes - (QA)</p>
+            <p class="text-lg text-gray-600">Analista de Testes - (QA)</p>
         </div>
     </header>
-
     <!-- Seção de introdução -->
-    <section class="text-center mt-10 max-w-lg mx-auto">
-        <h2 class="text-2xl font-bold">Olá! 👋</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">
-            Desde meus primeiros anos, fui fascinada pelo mundo da tecnologia. Essa paixão me conduziu naturalmente a uma carreira como Especialista em Garantia de Qualidade de Software (QA), na qual tenho mais de dois anos de experiência. Movida por uma curiosidade incessante em entender o funcionamento das coisas e com o objetivo de assegurar a excelência dos produtos, encontrei minha verdadeira vocação na certificação da qualidade de software. Ao unir meu entusiasmo pela tecnologia às minhas competências analíticas e de resolução de problemas, estou sempre pronta para proporcionar soluções eficazes, certificando a entrega de produtos que atendam aos mais altos padrões de qualidade.
-        </p>
-        <div class="mt-6 flex justify-center space-x-4">
-            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="mailto:gabrielaanselmao@gmail.com" target="_blank" class="bg-gray-600 text-white px-4 py-2 rounded-full">
-                <i class="fas fa-envelope"></i> E-mail
-            </a>
-            <a href="https://github.com/gabrielaanselmo" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded-full">
-                <i class="fab fa-github"></i> Github
-            </a>
-            <a href="docs/curriculo.pdf" target="_blank" download="Curriculo_Gabriela_Anselmo.pdf" class="bg-gray-700 text-white px-4 py-2 rounded-full">
-                <i class="fas fa-file-alt"></i> CV
-            </a>
+    <section class="flex flex-col md:flex-row items-center mt-10 mx-auto max-w-4xl">
+        <div class="bg-white shadow-md p-6 rounded-lg border border-gray-300 w-full text-left">
+            <h2 class="text-2xl font-bold flex items-center mb-4">
+                <span>Olá!</span>
+                <span class="ml-2">👋</span>
+            </h2>
+            <p class="text-gray-700">
+                Sou Especialista em QA com mais de dois anos de experiência, apaixonada por tecnologia e focada em garantir a excelência dos produtos. Uso minha curiosidade e habilidades analíticas para fornecer soluções eficazes e assegurar alta qualidade em software.
+            </p>
+            <!-- Botões de redes -->
+            <div class="mt-6 flex space-x-4 justify-center">
+                <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+                <a href="mailto:gabrielaanselmao@gmail.com" target="_blank" class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-full">
+                    <i class="fas fa-envelope mr-2"></i> E-mail
+                </a>
+                <a href="https://github.com/gabrielaanselmo" target="_blank" class="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full">
+                    <i class="fab fa-github mr-2"></i> Github
+                </a>
+                <a href="docs/curriculo.pdf" target="_blank" download="Curriculo_Gabriela_Anselmo.pdf" class="flex items-center bg-gray-700 text-white px-4 py-2 rounded-full">
+                    <i class="fas fa-file-alt mr-2"></i> CV
+                </a>
+            </div>
         </div>
     </section>
-
     <!-- Seção de Projetos -->
     <section class="mt-16 p-6">
         <h2 class="text-2xl font-bold text-center">Projetos de Automação</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 max-w-4xl mx-auto">
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+            <div class="bg-white p-6 rounded-lg shadow">
                 <h3 class="text-xl font-bold">Monitoramento de Preços</h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">Um projeto de automação no qual é realizado o monitoramento de preços, com o envio de notificações.</p>
+                <p class="mt-2 text-gray-600">Um projeto de automação no qual é realizado o monitoramento de preços, com o envio de notificações.</p>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Python</span>
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Selenium</span>
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
-                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" target="_blank" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Python</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Selenium</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
+                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
             </div>
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+            <div class="bg-white p-6 rounded-lg shadow">
                 <h3 class="text-xl font-bold">Gerenciamento de Tarefas</h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">Projeto de automação voltado para o gerenciamento de tarefas.</p>
+                <p class="mt-2 text-gray-600">Projeto de automação voltado para o gerenciamento de tarefas.</p>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Robot Framework</span>
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">SeleniumLibrary</span>
-                    <a href="https://github.com/gabrielaanselmo/todolist-automacao" target="_blank" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Robot Framework</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">SeleniumLibrary</span>
+                    <a href="https://github.com/gabrielaanselmo/todolist-automacao" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
             </div>
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+            <div class="bg-white p-6 rounded-lg shadow">
                 <h3 class="text-xl font-bold">Monitoramento de Sites</h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">Um projeto de automação no qual é realizado o monitoramento de sites, com o envio de notificações</p>
+                <p class="mt-2 text-gray-600">Um projeto de automação no qual é realizado o monitoramento de sites, com o envio de notificações</p>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Python</span>
-                    <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
-                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" target="_blank" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Python</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
+                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
             </div>
         </div>
@@ -78,42 +83,39 @@
     <section class="mt-16 p-6">
         <h2 class="text-2xl font-bold text-center">Tecnologias</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-6 max-w-4xl mx-auto">
-            <!-- Python -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <i class="fab fa-python text-4xl text-blue-500"></i>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-python-plain colored text-4xl"></i>
                 <h3 class="text-lg font-bold mt-2">Python</h3>
             </div>
-            <!-- JavaScript -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <i class="fab fa-js text-4xl text-yellow-500"></i>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-javascript-plain colored text-4xl"></i>
                 <h3 class="text-lg font-bold mt-2">JavaScript</h3>
             </div>
-            <!-- Cypress -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <h3 class="text-lg font-bold">Cypress</h3>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-cypress-plain colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">Cypress</h3>
             </div>
-            <!-- Robot Framework -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <h3 class="text-lg font-bold">Robot Framework</h3>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-robotframework-plain colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">Robot Framework</h3>
             </div>
-            <!-- Git -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <i class="fab fa-git-alt text-4xl text-orange-500"></i>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-git-plain colored text-4xl"></i>
                 <h3 class="text-lg font-bold mt-2">Git</h3>
             </div>
-            <!-- SQL -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <h3 class="text-lg font-bold">SQL</h3>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-postgresql-plain colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">SQL</h3>
             </div>
-            <!-- CI/CD -->
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg text-center shadow">
-                <h3 class="text-lg font-bold">CI/CD</h3>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-github-original colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">CI/CD</h3>
             </div>
         </div>
     </section>
 
-    <footer class="text-center mt-16 p-6 bg-gray-200 dark:bg-gray-800">
-        <p class="text-gray-700 dark:text-gray-300">© 2024 Gabriela. Todos os direitos reservados.</p>
+    <footer class="text-center mt-16 p-6 bg-gray-200">
+        <p class="text-gray-700">© 2024 Gabriela. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
