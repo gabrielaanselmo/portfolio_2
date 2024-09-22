@@ -4,41 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela - QA</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
-    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" rel="stylesheet"> <!-- Devicons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <header class="p-6 text-center">
-        <div class="inline-block">
-            <!-- Foto de perfil -->
-            <img src="img/foto-perfil.jpg" alt="Gabriela" class="rounded-full w-32 h-32 mx-auto">
-            <h1 class="mt-4 text-3xl font-bold">Gabriela</h1>
-            <p class="text-lg text-gray-600">Analista de Testes - (QA)</p>
-        </div>
+    <header class="flex flex-col items-center p-6">
+        <img src="img/foto-perfil.jpg" alt="Gabriela" class="rounded-full w-36 h-36 border-4 border-gray-300">
+        <h1 class="mt-4 text-3xl font-bold">Gabriela</h1>
+        <p class="text-lg text-gray-600">Analista de Testes - (QA)</p>
     </header>
     <!-- Seção de introdução -->
-    <section class="flex flex-col md:flex-row items-center mt-10 mx-auto max-w-4xl">
-        <div class="bg-white shadow-md p-6 rounded-lg border border-gray-300 w-full text-left">
-            <h2 class="text-2xl font-bold flex items-center mb-4">
-                <span>Olá!</span>
-                <span class="ml-2">👋</span>
-            </h2>
+    <section class="flex flex-col items-center mt-6 mx-auto max-w-3xl px-4">
+        <div class="bg-white shadow-lg p-6 rounded-lg border border-gray-200 w-full text-center">
+            <h2 class="text-2xl font-bold mb-4">Olá! <span class="ml-2">👋</span></h2>
             <p class="text-gray-700">
                 Sou Especialista em QA com mais de dois anos de experiência, apaixonada por tecnologia e focada em garantir a excelência dos produtos. Uso minha curiosidade e habilidades analíticas para fornecer soluções eficazes e assegurar alta qualidade em software.
             </p>
-            <!-- Botões de redes -->
-            <div class="mt-6 flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full">
-                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
-                </a>
-                <a href="mailto:gabrielaanselmao@gmail.com" target="_blank" class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-full">
-                    <i class="fas fa-envelope mr-2"></i> E-mail
-                </a>
-                <a href="https://github.com/gabrielaanselmo" target="_blank" class="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full">
-                    <i class="fab fa-github mr-2"></i> Github
-                </a>
-            </div>
+        </div>
+        <!-- Botões de redes e CV abaixo do quadrado branco -->
+        <div class="mt-6 flex justify-center space-x-4">
+            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition">
+                <i class="fab fa-linkedin mr-2"></i> LinkedIn
+            </a>
+            <a href="mailto:gabrielaanselmao@gmail.com" target="_blank" class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-full shadow hover:bg-gray-700 transition">
+                <i class="fas fa-envelope mr-2"></i> E-mail
+            </a>
+            <a href="https://github.com/gabrielaanselmo" target="_blank" class="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full shadow hover:bg-gray-900 transition">
+                <i class="fab fa-github mr-2"></i> Github
+            </a>
+            <a href="img/Currículo.pdf" download class="flex items-center bg-green-600 text-white px-4 py-2 rounded-full shadow hover:bg-green-700 transition">
+                <i class="fas fa-download mr-2"></i> Baixar CV
+            </a>
         </div>
     </section>
     <!-- Seção de Projetos -->
@@ -77,44 +74,45 @@
         </div>
     </section>
     <!-- Seção de Tecnologias -->
-<section class="mt-16 p-6">
-    <h2 class="text-2xl font-bold text-center">Tecnologias</h2>
-    <p class="text-sm text-center text-gray-600 mt-2">Tecnologias que tive contato no meu trabalho:</p>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-6 max-w-4xl mx-auto">
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="devicon-python-plain colored text-4xl"></i>
-            <h3 class="text-lg font-bold mt-2">Python</h3>
+    <section class="mt-16 p-6">
+        <h2 class="text-2xl font-bold text-center">Tecnologias</h2>
+        <p class="text-sm text-center text-gray-600 mt-2">Tecnologias que tive contato no meu trabalho:</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-6 max-w-4xl mx-auto">
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-python-plain colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">Python</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-javascript-plain colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">JavaScript</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="fas fa-vial text-4xl text-green-500"></i>
+                <h3 class="text-lg font-bold mt-2">Cypress</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="fas fa-robot text-4xl text-blue-500"></i>
+                <h3 class="text-lg font-bold mt-2">Robot Framework</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="devicon-git-plain colored text-4xl"></i>
+                <h3 class="text-lg font-bold mt-2">Git</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="fas fa-database text-4xl text-blue-600"></i>
+                <h3 class="text-lg font-bold mt-2">SQL</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="fas fa-sync-alt text-4xl text-orange-500"></i>
+                <h3 class="text-lg font-bold mt-2">CI/CD</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg text-center shadow">
+                <i class="fab fa-jira text-4xl text-blue-500"></i>
+                <h3 class="text-lg font-bold mt-2">Jira</h3>
+            </div>
         </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="devicon-javascript-plain colored text-4xl"></i>
-            <h3 class="text-lg font-bold mt-2">JavaScript</h3>
-        </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="fas fa-vial text-4xl text-green-500"></i>
-            <h3 class="text-lg font-bold mt-2">Cypress</h3>
-        </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="fas fa-robot text-4xl text-blue-500"></i>
-            <h3 class="text-lg font-bold mt-2">Robot Framework</h3>
-        </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="devicon-git-plain colored text-4xl"></i>
-            <h3 class="text-lg font-bold mt-2">Git</h3>
-        </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="fas fa-database text-4xl text-blue-600"></i>
-            <h3 class="text-lg font-bold mt-2">SQL</h3>
-        </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="fas fa-sync-alt text-4xl text-orange-500"></i>
-            <h3 class="text-lg font-bold mt-2">CI/CD</h3>
-        </div>
-        <div class="bg-white p-4 rounded-lg text-center shadow">
-            <i class="fab fa-jira text-4xl text-blue-500"></i>
-            <h3 class="text-lg font-bold mt-2">Jira</h3>
-        </div>
-    </div>
-</section>
+    </section>
+
     <footer class="text-center mt-16 p-6 bg-gray-200">
         <p class="text-gray-700">© 2024 Gabriela. Todos os direitos reservados.</p>
     </footer>
