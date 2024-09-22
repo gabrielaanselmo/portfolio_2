@@ -1,23 +1,27 @@
 # Portfólio QA - Gabriela
 
-Este é o repositório do meu portfólio como QA. O projeto está sendo desenvolvido com o intuito de exibir meus conhecimentos em automação de testes e outras habilidades relacionadas à qualidade de software.
+Bem-vindo ao repositório do meu portfólio como Quality Assurance (QA). Este projeto foi desenvolvido para destacar minhas habilidades em automação de testes, bem como outras competências relacionadas à qualidade de software. O site é totalmente responsivo e utiliza as melhores práticas de desenvolvimento para garantir uma experiência intuitiva e moderna.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **HTML**: Estrutura da página.
-- **CSS/TailwindCSS**: Estilização e responsividade.
-- **JavaScript**: Lógica para funcionalidades como troca de tema (dark mode).
-- **Font Awesome**: Ícones usados nas seções de contatos e tecnologias.
+- **HTML**: Estruturação do conteúdo da página.
+- **CSS/TailwindCSS**: Estilos personalizados e responsividade.
+- **JavaScript**: Implementação de funcionalidades interativas, como a troca de temas (modo claro/escuro).
+- **Font Awesome**: Ícones utilizados nas seções de contato e tecnologias.
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-- **public/**: Contém os arquivos HTML, CSS gerado e imagens usadas no site.
-- **src/**: Contém o CSS de entrada para o Tailwind.
-- **package.json**: Configurações do projeto e scripts para compilar o CSS.
-- **tailwind.config.js**: Configurações do TailwindCSS.
+- **public/**: Contém os arquivos estáticos, como HTML, CSS compilado e imagens.
+- **src/**: Arquivos fonte do projeto, incluindo o CSS não compilado para o TailwindCSS.
+- **package.json**: Configurações do projeto, incluindo dependências e scripts para compilação.
+- **tailwind.config.js**: Arquivo de configuração do TailwindCSS para personalizações.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
-- **Modo Claro/Escuro (Dark Mode)**: Alterna entre temas claro e escuro.
-- **Seção de Projetos**: Exibe alguns dos meus projetos de automação de testes.
-- **Seção de Tecnologias**: Mostra as tecnologias com as quais tenho experiência.
+- **Modo Claro/Escuro (Dark Mode)**: Alternância entre os temas claro e escuro para uma experiência de usuário personalizada.
+- **Seção de Projetos**: Apresentação dos principais projetos de automação de testes que desenvolvi.
+- **Seção de Tecnologias**: Exibição das ferramentas e tecnologias com as quais tenho experiência, incluindo automação de testes, desenvolvimento web e integração contínua.
+
+## 🎯 Objetivo
+
+Este portfólio visa demonstrar minhas habilidades técnicas em automação de testes e boas práticas de QA, além de oferecer uma visão clara sobre os projetos em que trabalhei e as tecnologias que utilizo no meu dia a dia.
