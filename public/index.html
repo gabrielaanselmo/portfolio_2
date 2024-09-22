@@ -7,7 +7,7 @@
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 dark:text-white">
+<body class="bg-gray-100 text-gray-900">
     <header class="p-6 text-center">
         <div class="inline-block">
             <!-- Foto de perfil -->
@@ -15,10 +15,6 @@
             <h1 class="mt-4 text-3xl font-bold">Gabriela</h1>
             <p class="text-lg text-gray-600 dark:text-gray-400">Analista de Testes - (QA)</p>
         </div>
-        <button onclick="toggleTheme()" class="mt-4 text-xl">
-            <!-- Ícone para alternar o modo escuro e claro -->
-            <i id="themeIcon" class="fas fa-moon"></i>
-        </button>
     </header>
 
     <!-- Seção de introdução -->
@@ -28,14 +24,17 @@
             Desde meus primeiros anos, fui fascinada pelo mundo da tecnologia. Essa paixão me conduziu naturalmente a uma carreira como Especialista em Garantia de Qualidade de Software (QA), na qual tenho mais de dois anos de experiência. Movida por uma curiosidade incessante em entender o funcionamento das coisas e com o objetivo de assegurar a excelência dos produtos, encontrei minha verdadeira vocação na certificação da qualidade de software. Ao unir meu entusiasmo pela tecnologia às minhas competências analíticas e de resolução de problemas, estou sempre pronta para proporcionar soluções eficazes, certificando a entrega de produtos que atendam aos mais altos padrões de qualidade.
         </p>
         <div class="mt-6 flex justify-center space-x-4">
-            <a href="https://www.linkedin.com/in/gabriela-anselmo/" class="bg-blue-600 text-white px-4 py-2 rounded-full">
+            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="mailto:gabrielaanselmao@gmail.com" class="bg-gray-600 text-white px-4 py-2 rounded-full">
+            <a href="mailto:gabrielaanselmao@gmail.com" target="_blank" class="bg-gray-600 text-white px-4 py-2 rounded-full">
                 <i class="fas fa-envelope"></i> E-mail
             </a>
-            <a href="https://github.com/gabrielaanselmo" class="bg-gray-800 text-white px-4 py-2 rounded-full">
+            <a href="https://github.com/gabrielaanselmo" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded-full">
                 <i class="fab fa-github"></i> Github
+            </a>
+            <a href="docs/curriculo.pdf" target="_blank" download="Curriculo_Gabriela_Anselmo.pdf" class="bg-gray-700 text-white px-4 py-2 rounded-full">
+                <i class="fas fa-file-alt"></i> CV
             </a>
         </div>
     </section>
@@ -51,7 +50,7 @@
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Python</span>
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Selenium</span>
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
-                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
+                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" target="_blank" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
@@ -60,7 +59,7 @@
                 <div class="flex justify-between items-center mt-4">
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Robot Framework</span>
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">SeleniumLibrary</span>
-                    <a href="https://github.com/gabrielaanselmo/todolist-automacao" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
+                    <a href="https://github.com/gabrielaanselmo/todolist-automacao" target="_blank" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
@@ -69,7 +68,7 @@
                 <div class="flex justify-between items-center mt-4">
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">Python</span>
                     <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
-                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
+                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" target="_blank" class="text-blue-600 dark:text-blue-400"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
             </div>
         </div>
@@ -116,6 +115,5 @@
     <footer class="text-center mt-16 p-6 bg-gray-200 dark:bg-gray-800">
         <p class="text-gray-700 dark:text-gray-300">© 2024 Gabriela. Todos os direitos reservados.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
