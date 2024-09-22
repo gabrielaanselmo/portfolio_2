@@ -6,7 +6,6 @@ Bem-vindo ao repositório do meu portfólio como Quality Assurance (QA). Este pr
 
 - **HTML**: Estruturação do conteúdo da página.
 - **CSS/TailwindCSS**: Estilos personalizados e responsividade.
-- **JavaScript**: Implementação de funcionalidades interativas, como a troca de temas (modo claro/escuro).
 - **Font Awesome**: Ícones utilizados nas seções de contato e tecnologias.
 
 ## 📁 Estrutura do Projeto
@@ -16,11 +15,6 @@ Bem-vindo ao repositório do meu portfólio como Quality Assurance (QA). Este pr
 - **package.json**: Configurações do projeto, incluindo dependências e scripts para compilação.
 - **tailwind.config.js**: Arquivo de configuração do TailwindCSS para personalizações.
 
-## 🚀 Funcionalidades
-
-- **Modo Claro/Escuro (Dark Mode)**: Alternância entre os temas claro e escuro para uma experiência de usuário personalizada.
-- **Seção de Projetos**: Apresentação dos principais projetos de automação de testes que desenvolvi.
-- **Seção de Tecnologias**: Exibição das ferramentas e tecnologias com as quais tenho experiência, incluindo automação de testes, desenvolvimento web e integração contínua.
 
 ## 🎯 Objetivo
 
