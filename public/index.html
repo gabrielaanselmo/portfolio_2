@@ -1,136 +1,251 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriela - QA</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-900">
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Gabriela Anselmo, QA Lead com foco em automação de testes, qualidade contínua e produtos digitais confiáveis."
+    />
+    <title>Gabriela Anselmo | QA Lead</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="antialiased">
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="hero-grid"></div>
+    </div>
 
-    <header class="flex flex-col items-center p-6">
-        <img src="img/foto_perfil_2.jpeg" alt="Gabriela" class="rounded-full w-36 h-36 border-4 border-gray-300">
-        <h1 class="mt-4 text-3xl font-bold">Gabriela</h1>
-        <p class="text-lg text-gray-600">QA Lead</p>
+    <header class="site-header sticky top-0 z-50 border-b backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+        <a href="#inicio" class="text-lg font-extrabold tracking-tight">GA<span class="text-cyan-400">.</span></a>
+        <div class="hidden items-center gap-8 text-sm font-medium md:flex">
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#competencias" class="nav-link">Competências</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" class="btn-icon btn-theme" aria-label="Alternar tema" aria-pressed="false">
+            <i class="fa-solid fa-moon"></i>
+            <span id="theme-label">Dark mode</span>
+          </button>
+          <button id="menu-toggle" class="btn-icon md:hidden" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="site-mobile-menu hidden border-t px-6 py-4 md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-medium">
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#competencias" class="nav-link">Competências</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </div>
+      </div>
     </header>
 
-    <!-- Seção de introdução -->
-    <section class="flex flex-col items-center mt-6 mx-auto max-w-3xl px-4">
-        <div class="bg-white shadow-lg p-6 rounded-lg border border-gray-200 w-full text-center">
-            <h2 class="text-2xl font-bold mb-4">Olá! <span class="ml-2">👋</span></h2>
-            <p class="text-gray-700">
-                Sou Especialista em QA com mais de dois anos de experiência, apaixonada por tecnologia e focada em garantir a excelência dos produtos. Uso minha curiosidade e habilidades analíticas para fornecer soluções eficazes e assegurar alta qualidade em software.
+    <main id="inicio" class="mx-auto max-w-6xl px-6 pb-16 pt-12 lg:px-8">
+      <section class="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="space-y-7">
+          <span class="chip">Disponível para oportunidades remotas e híbridas</span>
+          <h1 class="text-balance text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+            QA Lead que transforma
+            <span class="text-cyan-400">qualidade em vantagem competitiva</span>
+          </h1>
+          <p class="max-w-2xl text-lg text-on-light">
+            Sou Gabriela Anselmo, especialista em qualidade de software, com experiência em automação,
+            validação ponta a ponta e construção de processos robustos para entregas estáveis.
+          </p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="img/Currículo (3).pdf" download class="btn-primary">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Baixar currículo
+            </a>
+            <a href="#contato" class="btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i>
+              Falar comigo
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-4 text-sm text-on-light">
+            <a href="mailto:gabrielaanselmao@gmail.com" class="social-pill"><i class="fa-solid fa-envelope"></i> gabrielaanselmao@gmail.com</a>
+            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" rel="noreferrer" class="social-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/gabrielaanselmo" target="_blank" rel="noreferrer" class="social-pill"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="card-glass space-y-6 p-6 sm:p-8">
+          <div class="flex items-center gap-5">
+            <img
+              src="img/foto_perfil_2.jpeg"
+              alt="Foto de Gabriela Anselmo"
+              class="profile-photo h-20 w-20 rounded-2xl border object-cover"
+            />
+            <div>
+              <p class="text-sm text-accent-soft">Profissional de Qualidade</p>
+              <h2 class="text-2xl font-bold">Gabriela Anselmo</h2>
+              <p class="text-sm text-on-light">QA Lead • Test Automation • Qualidade Contínua</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <article class="metric-card">
+              <p class="metric-number">+4 anos</p>
+              <p class="metric-label">Experiência em QA</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-number">3</p>
+              <p class="metric-label">Projetos públicos</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-number">100%</p>
+              <p class="metric-label">Foco em qualidade</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-number">24/7</p>
+              <p class="metric-label">Mentalidade de melhoria</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="mt-20 grid gap-6 lg:grid-cols-3">
+        <article class="card-glass lg:col-span-2">
+          <h2 class="section-title">Sobre mim</h2>
+          <p class="mt-4 text-on-light">
+            Atuo com QA de forma estratégica, colaborando com times de produto e engenharia para elevar padrões de qualidade,
+            reduzir regressões e acelerar entregas. Meu trabalho combina visão analítica com execução prática de testes manuais
+            e automatizados.
+          </p>
+          <p class="mt-4 text-on-light">
+            Tenho forte interesse por observabilidade, pipelines de validação e cultura quality-first. Gosto de transformar requisitos
+            em cenários claros, mensuráveis e automatizáveis.
+          </p>
+        </article>
+        <article class="card-glass">
+          <h3 class="section-subtitle">Diferenciais</h3>
+          <ul class="mt-4 space-y-3 text-sm text-on-light">
+            <li class="list-item"><i class="fa-solid fa-check"></i> Planejamento de estratégia de testes</li>
+            <li class="list-item"><i class="fa-solid fa-check"></i> Automação E2E com foco em confiabilidade</li>
+            <li class="list-item"><i class="fa-solid fa-check"></i> Integração com CI/CD para feedback rápido</li>
+            <li class="list-item"><i class="fa-solid fa-check"></i> Comunicação clara com áreas técnicas e negócio</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projetos" class="mt-20">
+        <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="section-title">Projetos em destaque</h2>
+            <p class="text-on-light">Exemplos práticos de automação e monitoramento aplicados em QA.</p>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="project-card">
+            <div class="project-icon bg-sky-500/20 text-sky-300"><i class="fa-solid fa-tags"></i></div>
+            <h3 class="project-title">Monitoramento de Preços</h3>
+            <p class="project-description">
+              Solução automatizada para rastrear variações de preço e disparar alertas com foco em tomada de decisão rápida.
             </p>
-        </div>
-
-        <!-- Botões de redes e CV abaixo do quadrado branco -->
-        <div class="mt-6 flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" class="flex items-center bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition text-center w-full sm:w-auto">
-                <i class="fab fa-linkedin mr-2"></i> LinkedIn
+            <div class="tag-group">
+              <span class="tag">Python</span>
+              <span class="tag">Selenium</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+            <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" target="_blank" rel="noreferrer" class="project-link">
+              Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
-            <a href="mailto:gabrielaanselmao@gmail.com" target="_blank" class="flex items-center bg-gray-600 text-white px-6 py-3 rounded-full shadow hover:bg-gray-700 transition text-center w-full sm:w-auto">
-                <i class="fas fa-envelope mr-2"></i> E-mail
-            </a>
-            <a href="https://github.com/gabrielaanselmo" target="_blank" class="flex items-center bg-gray-800 text-white px-6 py-3 rounded-full shadow hover:bg-gray-900 transition text-center w-full sm:w-auto">
-                <i class="fab fa-github mr-2"></i> Github
-            </a>
-            <a href="img/Currículo (3).pdf" download class="flex items-center bg-green-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700 transition text-center w-full sm:w-auto">
-                <i class="fas fa-download mr-2"></i> Baixar CV
-            </a>
-        </div>
-    </section>
+          </article>
 
-    <!-- Seção de Projetos -->
-    <section class="mt-16 p-6">
-        <h2 class="text-2xl font-bold text-center">Projetos de Automação</h2>
-        <p class="text-sm text-center text-gray-600 mt-2">Aqui estão alguns dos projetos em que trabalhei:</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 max-w-4xl mx-auto">
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-bold">Monitoramento de Preços</h3>
-                <p class="mt-2 text-gray-600">Um projeto de automação no qual é realizado o monitoramento de preços, com o envio de notificações.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Python</span>
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Selenium</span>
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
-                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
-                </div>
+          <article class="project-card">
+            <div class="project-icon bg-violet-500/20 text-violet-300"><i class="fa-solid fa-list-check"></i></div>
+            <h3 class="project-title">Gerenciamento de Tarefas</h3>
+            <p class="project-description">
+              Automação de fluxo de tarefas para validar cenários críticos de CRUD e comportamento da aplicação.
+            </p>
+            <div class="tag-group">
+              <span class="tag">Robot Framework</span>
+              <span class="tag">SeleniumLibrary</span>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-bold">Gerenciamento de Tarefas</h3>
-                <p class="mt-2 text-gray-600">Um projeto de automação voltado para o gerenciamento de tarefas.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Robot Framework</span>
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">SeleniumLibrary</span>
-                    <a href="https://github.com/gabrielaanselmo/todolist-automacao" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-bold">Monitoramento de Sites</h3>
-                <p class="mt-2 text-gray-600">Um projeto de automação no qual é realizado o monitoramento de sites, com o envio de notificações.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Python</span>
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">GitHub Actions</span>
-                    <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-bold">Automação de Perfomance</h3>
-                <p class="mt-2 text-gray-600">Uma implementação simples de testes de carga e automação utilizando JMeter e Selenium.</p>
-                <div class="flex justify-between items-center mt-4">
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Python</span>
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Selenium</span>
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-xs">Jmeter</span>
-                    <a href="https://github.com/gabrielaanselmo/teste_carga_automacao" target="_blank" class="text-blue-600"><i class="fab fa-github"></i> Ver no GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            <a href="https://github.com/gabrielaanselmo/todolist-automacao" target="_blank" rel="noreferrer" class="project-link">
+              Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
 
-    <!-- Seção de Tecnologias -->
-    <section class="mt-16 p-6">
-        <h2 class="text-2xl font-bold text-center">Tecnologias</h2>
-        <p class="text-sm text-center text-gray-600 mt-2">Tecnologias que tive contato no meu trabalho:</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-6 max-w-4xl mx-auto">
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="devicon-python-plain colored text-4xl"></i>
-                <h3 class="text-lg font-bold mt-2">Python</h3>
+          <article class="project-card">
+            <div class="project-icon bg-emerald-500/20 text-emerald-300"><i class="fa-solid fa-globe"></i></div>
+            <h3 class="project-title">Monitoramento de Sites</h3>
+            <p class="project-description">
+              Pipeline de verificação contínua de disponibilidade com notificações para resposta rápida a incidentes.
+            </p>
+            <div class="tag-group">
+              <span class="tag">Python</span>
+              <span class="tag">Monitoramento</span>
+              <span class="tag">GitHub Actions</span>
             </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="devicon-javascript-plain colored text-4xl"></i>
-                <h3 class="text-lg font-bold mt-2">JavaScript</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="fas fa-vial text-4xl text-green-500"></i>
-                <h3 class="text-lg font-bold mt-2">Cypress</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="fas fa-robot text-4xl text-blue-500"></i>
-                <h3 class="text-lg font-bold mt-2">Robot Framework</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="devicon-git-plain colored text-4xl"></i>
-                <h3 class="text-lg font-bold mt-2">Git</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="fas fa-database text-4xl text-blue-600"></i>
-                <h3 class="text-lg font-bold mt-2">SQL</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="fas fa-sync-alt text-4xl text-orange-500"></i>
-                <h3 class="text-lg font-bold mt-2">CI/CD</h3>
-            </div>
-            <div class="bg-white p-4 rounded-lg text-center shadow">
-                <i class="fas fa-flask text-4xl text-red-500"></i>
-                <h3 class="text-lg font-bold mt-2">JMeter</h3> 
-            </div>
+            <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" target="_blank" rel="noreferrer" class="project-link">
+              Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <footer class="text-center mt-16 p-6 bg-gray-200">
-        <p class="text-gray-700">© 2024 Gabriela. Todos os direitos reservados.</p>
+      <section id="competencias" class="mt-20 grid gap-6 lg:grid-cols-2">
+        <article class="card-glass">
+          <h2 class="section-title">Stack e ferramentas</h2>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Selenium</span>
+            <span class="skill-chip">Robot Framework</span>
+            <span class="skill-chip">Postman</span>
+            <span class="skill-chip">Git & GitHub</span>
+            <span class="skill-chip">CI/CD</span>
+            <span class="skill-chip">Testes funcionais</span>
+            <span class="skill-chip">Testes regressivos</span>
+          </div>
+        </article>
+        <article class="card-glass">
+          <h2 class="section-title">Como eu trabalho</h2>
+          <ol class="mt-5 space-y-4 text-on-light">
+            <li class="timeline-item"><span>1</span> Entendimento do contexto do produto e critérios de aceite.</li>
+            <li class="timeline-item"><span>2</span> Desenho da estratégia de testes com priorização de risco.</li>
+            <li class="timeline-item"><span>3</span> Execução manual + automação para cobertura eficiente.</li>
+            <li class="timeline-item"><span>4</span> Métricas e melhoria contínua para evolução da qualidade.</li>
+          </ol>
+        </article>
+      </section>
+
+      <section id="contato" class="mt-20">
+        <div class="card-glass flex flex-col gap-6 p-8 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h2 class="section-title">Vamos construir produtos mais confiáveis?</h2>
+            <p class="mt-2 max-w-2xl text-on-light">
+              Se você busca uma profissional de QA com olhar técnico, colaboração próxima ao time e foco real em resultado,
+              estou pronta para contribuir.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:gabrielaanselmao@gmail.com" class="btn-primary"><i class="fa-solid fa-envelope"></i> Enviar e-mail</a>
+            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" rel="noreferrer" class="btn-secondary"><i class="fa-brands fa-linkedin"></i> Conectar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer border-t px-6 py-8 text-center text-sm">
+      <p>© <span id="current-year"></span> Gabriela Anselmo. Qualidade com propósito.</p>
     </footer>
 
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
