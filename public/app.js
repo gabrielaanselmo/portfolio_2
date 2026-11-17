@@ -5,45 +5,67 @@ const mobileMenu = document.getElementById('mobile-menu');
 const yearElement = document.getElementById('current-year');
 
 const storageKey = 'ga-theme';
-const savedTheme = localStorage.getItem(storageKey);
-
-if (savedTheme === 'dark') {
-  root.classList.add('dark');
+try {
+  root.classList.toggle('dark', localStorage.getItem(storageKey) === 'dark');
+} catch {
+  // Storage can be unavailable even when scripts are enabled.
 }
 
-const syncThemeUi = () => {
-  const isDark = root.classList.contains('dark');
-
-  if (themeToggle) {
-    themeToggle.innerHTML = isDark
-      ? '<i class="fa-solid fa-sun"></i><span id="theme-label">Light mode</span>'
-      : '<i class="fa-solid fa-moon"></i><span id="theme-label">Dark mode</span>';
+if (themeToggle) {
+  const syncThemeUi = () => {
+    const isDark = root.classList.contains('dark');
+    const icon = themeToggle.querySelector('i');
+    icon.classList.toggle('fa-moon', !isDark);
+    icon.classList.toggle('fa-sun', isDark);
     themeToggle.setAttribute('aria-pressed', String(isDark));
-    themeToggle.setAttribute(
-      'aria-label',
-      isDark ? 'Trocar para light mode' : 'Trocar para dark mode',
-    );
-  }
-};
+  };
 
-syncThemeUi();
-
-themeToggle?.addEventListener('click', () => {
-  root.classList.toggle('dark');
-  const isDark = root.classList.contains('dark');
-  localStorage.setItem(storageKey, isDark ? 'dark' : 'light');
   syncThemeUi();
-});
+  themeToggle.addEventListener('click', () => {
+    const isDark = root.classList.toggle('dark');
+    syncThemeUi();
 
-menuToggle?.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-});
-
-mobileMenu?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
+    try {
+      localStorage.setItem(storageKey, isDark ? 'dark' : 'light');
+    } catch {
+      // The theme still works for the current page.
+    }
   });
-});
+}
+
+if (menuToggle && mobileMenu) {
+  const setMenuOpen = (isOpen) => {
+    mobileMenu.classList.toggle('hidden', !isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  };
+
+  menuToggle.addEventListener('click', () => {
+    setMenuOpen(mobileMenu.classList.contains('hidden'));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (
+      event.key === 'Escape' &&
+      !mobileMenu.classList.contains('hidden') &&
+      (event.target === menuToggle || mobileMenu.contains(event.target))
+    ) {
+      setMenuOpen(false);
+      menuToggle.focus();
+    }
+  });
+
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      const section = document.getElementById(link.hash.slice(1));
+      const heading = section?.querySelector('h2');
+      setMenuOpen(false);
+      if (heading) {
+        heading.setAttribute('tabindex', '-1');
+        heading.focus({ preventScroll: true });
+      }
+    });
+  });
+}
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();

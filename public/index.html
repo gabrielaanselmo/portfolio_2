@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,8 +28,8 @@
     </div>
 
     <header class="site-header sticky top-0 z-50 border-b backdrop-blur-xl">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#inicio" class="text-lg font-extrabold tracking-tight">GA<span class="text-cyan-400">.</span></a>
+      <nav aria-label="Navegação principal" class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+        <a href="#inicio" class="text-lg font-extrabold tracking-tight">GA<span class="hero-accent">.</span></a>
         <div class="hidden items-center gap-8 text-sm font-medium md:flex">
           <a href="#sobre" class="nav-link">Sobre</a>
           <a href="#projetos" class="nav-link">Projetos</a>
@@ -37,23 +37,23 @@
           <a href="#contato" class="nav-link">Contato</a>
         </div>
         <div class="flex items-center gap-3">
-          <button id="theme-toggle" class="btn-icon btn-theme" aria-label="Alternar tema" aria-pressed="false">
-            <i class="fa-solid fa-moon"></i>
-            <span id="theme-label">Dark mode</span>
+          <button id="theme-toggle" type="button" class="btn-icon btn-theme" aria-label="Tema escuro" aria-pressed="false">
+            <i aria-hidden="true" class="fa-solid fa-moon"></i>
+            <span>Tema escuro</span>
           </button>
-          <button id="menu-toggle" class="btn-icon md:hidden" aria-label="Abrir menu">
-            <i class="fa-solid fa-bars"></i>
+          <button id="menu-toggle" type="button" class="btn-icon md:hidden" aria-label="Menu de navegação" aria-controls="mobile-menu" aria-expanded="false">
+            <i aria-hidden="true" class="fa-solid fa-bars"></i>
           </button>
         </div>
       </nav>
-      <div id="mobile-menu" class="site-mobile-menu hidden border-t px-6 py-4 md:hidden">
+      <nav id="mobile-menu" aria-label="Navegação principal" class="site-mobile-menu hidden border-t px-6 py-4 md:hidden">
         <div class="flex flex-col gap-3 text-sm font-medium">
           <a href="#sobre" class="nav-link">Sobre</a>
           <a href="#projetos" class="nav-link">Projetos</a>
           <a href="#competencias" class="nav-link">Competências</a>
           <a href="#contato" class="nav-link">Contato</a>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main id="inicio" class="mx-auto max-w-6xl px-6 pb-16 pt-12 lg:px-8">
@@ -62,7 +62,7 @@
           <span class="chip">Disponível para oportunidades remotas e híbridas</span>
           <h1 class="text-balance text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
             QA Lead que transforma
-            <span class="text-cyan-400">qualidade em vantagem competitiva</span>
+            <span class="hero-accent">qualidade em vantagem competitiva</span>
           </h1>
           <p class="max-w-2xl text-lg text-on-light">
             Sou Gabriela Anselmo, especialista em qualidade de software, com experiência em automação,
@@ -70,18 +70,18 @@
           </p>
           <div class="flex flex-wrap items-center gap-4">
             <a href="img/Curriculo_Gabriela_Anselmo.pdf" download="Curriculo_Gabriela_Anselmo.pdf" class="btn-primary">
-              <i class="fa-solid fa-file-arrow-down"></i>
+              <i aria-hidden="true" class="fa-solid fa-file-arrow-down"></i>
               Baixar currículo
             </a>
             <a href="#contato" class="btn-secondary">
-              <i class="fa-solid fa-paper-plane"></i>
+              <i aria-hidden="true" class="fa-solid fa-paper-plane"></i>
               Falar comigo
             </a>
           </div>
           <div class="flex flex-wrap gap-4 text-sm text-on-light">
-            <a href="mailto:gabrielaanselmao@gmail.com" class="social-pill"><i class="fa-solid fa-envelope"></i> gabrielaanselmao@gmail.com</a>
-            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" rel="noreferrer" class="social-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/gabrielaanselmo" target="_blank" rel="noreferrer" class="social-pill"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="mailto:gabrielaanselmao@gmail.com" class="social-pill"><i aria-hidden="true" class="fa-solid fa-envelope"></i> gabrielaanselmao@gmail.com</a>
+            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" rel="noreferrer" class="social-pill"><i aria-hidden="true" class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/gabrielaanselmo" target="_blank" rel="noreferrer" class="social-pill"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
           </div>
         </div>
         <div class="card-glass space-y-6 p-6 sm:p-8">
@@ -134,10 +134,10 @@
         <article class="card-glass">
           <h3 class="section-subtitle">Diferenciais</h3>
           <ul class="mt-4 space-y-3 text-sm text-on-light">
-            <li class="list-item"><i class="fa-solid fa-check"></i> Planejamento de estratégia de testes</li>
-            <li class="list-item"><i class="fa-solid fa-check"></i> Automação E2E com foco em confiabilidade</li>
-            <li class="list-item"><i class="fa-solid fa-check"></i> Integração com CI/CD para feedback rápido</li>
-            <li class="list-item"><i class="fa-solid fa-check"></i> Comunicação clara com áreas técnicas e negócio</li>
+            <li class="list-item"><i aria-hidden="true" class="fa-solid fa-check"></i> Planejamento de estratégia de testes</li>
+            <li class="list-item"><i aria-hidden="true" class="fa-solid fa-check"></i> Automação E2E com foco em confiabilidade</li>
+            <li class="list-item"><i aria-hidden="true" class="fa-solid fa-check"></i> Integração com CI/CD para feedback rápido</li>
+            <li class="list-item"><i aria-hidden="true" class="fa-solid fa-check"></i> Comunicação clara com áreas técnicas e negócio</li>
           </ul>
         </article>
       </section>
@@ -152,7 +152,7 @@
 
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           <article class="project-card">
-            <div class="project-icon bg-sky-500/20 text-sky-300"><i class="fa-solid fa-tags"></i></div>
+            <div class="project-icon bg-sky-500/20 text-sky-300"><i aria-hidden="true" class="fa-solid fa-tags"></i></div>
             <h3 class="project-title">Monitoramento de Preços</h3>
             <p class="project-description">
               Solução automatizada para rastrear variações de preço e disparar alertas com foco em tomada de decisão rápida.
@@ -163,12 +163,12 @@
               <span class="tag">GitHub Actions</span>
             </div>
             <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_precos" target="_blank" rel="noreferrer" class="project-link">
-              Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Ver repositório<span class="sr-only"> de Monitoramento de Preços (abre em nova aba)</span> <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </article>
 
           <article class="project-card">
-            <div class="project-icon bg-violet-500/20 text-violet-300"><i class="fa-solid fa-list-check"></i></div>
+            <div class="project-icon bg-violet-500/20 text-violet-300"><i aria-hidden="true" class="fa-solid fa-list-check"></i></div>
             <h3 class="project-title">Gerenciamento de Tarefas</h3>
             <p class="project-description">
               Automação de fluxo de tarefas para validar cenários críticos de CRUD e comportamento da aplicação.
@@ -178,12 +178,12 @@
               <span class="tag">SeleniumLibrary</span>
             </div>
             <a href="https://github.com/gabrielaanselmo/todolist-automacao" target="_blank" rel="noreferrer" class="project-link">
-              Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Ver repositório<span class="sr-only"> de Gerenciamento de Tarefas (abre em nova aba)</span> <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </article>
 
           <article class="project-card">
-            <div class="project-icon bg-emerald-500/20 text-emerald-300"><i class="fa-solid fa-globe"></i></div>
+            <div class="project-icon bg-emerald-500/20 text-emerald-300"><i aria-hidden="true" class="fa-solid fa-globe"></i></div>
             <h3 class="project-title">Monitoramento de Sites</h3>
             <p class="project-description">
               Pipeline de verificação contínua de disponibilidade com notificações para resposta rápida a incidentes.
@@ -194,7 +194,7 @@
               <span class="tag">GitHub Actions</span>
             </div>
             <a href="https://github.com/gabrielaanselmo/automacao_monitoramento_sites" target="_blank" rel="noreferrer" class="project-link">
-              Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Ver repositório<span class="sr-only"> de Monitoramento de Sites (abre em nova aba)</span> <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </article>
         </div>
@@ -235,8 +235,8 @@
             </p>
           </div>
           <div class="flex flex-wrap gap-3">
-            <a href="mailto:gabrielaanselmao@gmail.com" class="btn-primary"><i class="fa-solid fa-envelope"></i> Enviar e-mail</a>
-            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" rel="noreferrer" class="btn-secondary"><i class="fa-brands fa-linkedin"></i> Conectar</a>
+            <a href="mailto:gabrielaanselmao@gmail.com" class="btn-primary"><i aria-hidden="true" class="fa-solid fa-envelope"></i> Enviar e-mail</a>
+            <a href="https://www.linkedin.com/in/gabriela-anselmo/" target="_blank" rel="noreferrer" class="btn-secondary"><i aria-hidden="true" class="fa-brands fa-linkedin"></i> Conectar</a>
           </div>
         </div>
       </section>

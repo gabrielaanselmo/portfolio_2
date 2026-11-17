@@ -564,7 +564,8 @@ video {
   --border: #d0d7e2;
   --header-bg: rgba(255, 255, 255, 0.92);
   --accent: #0c66e4;
-  --accent-soft: #1d7afc;
+  --accent-soft: #0747a6;
+  --on-accent: #ffffff;
   --chip-bg: #e9f2ff;
   --chip-text: #0c66e4;
 }
@@ -580,6 +581,7 @@ html.dark {
   --header-bg: rgba(29, 33, 37, 0.92);
   --accent: #85b8ff;
   --accent-soft: #9cc4ff;
+  --on-accent: #172b4d;
   --chip-bg: #27313f;
   --chip-text: #85b8ff;
 }
@@ -589,12 +591,31 @@ html,
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+html {
+  scroll-padding-top: 5rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg);
   color: var(--text);
+}
+
+.hero-accent {
+  color: var(--accent);
 }
 
 .site-header {
@@ -692,14 +713,13 @@ body {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   background: var(--accent);
+  color: var(--on-accent);
 }
 
 .btn-primary:hover {
@@ -962,8 +982,10 @@ body {
   color: var(--accent);
 }
 
-.project-link:hover {
+.project-link:hover,
+  .project-link:focus-visible {
   color: var(--accent-soft);
+  text-decoration: underline;
 }
 
 .skill-chip {
@@ -993,6 +1015,24 @@ body {
   color: var(--muted);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow {
+    animation: none;
+  }
+
+  .btn-primary,
+    .btn-secondary,
+    .project-card {
+    transition-property: color, background-color, border-color;
+  }
+
+  .btn-primary:hover,
+    .btn-secondary:hover,
+    .project-card:hover {
+    transform: none;
+  }
+}
+
 .timeline-item span {
   display: inline-flex;
   height: 1.75rem;
@@ -1005,6 +1045,18 @@ body {
   font-weight: 700;
   background: color-mix(in oklab, var(--accent) 20%, var(--surface));
   color: var(--accent-soft);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .fixed {
@@ -1160,10 +1212,6 @@ body {
   overflow: hidden;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
 .text-balance {
   text-wrap: balance;
 }
@@ -1274,11 +1322,6 @@ body {
 
 .tracking-tight {
   letter-spacing: -0.025em;
-}
-
-.text-cyan-400 {
-  --tw-text-opacity: 1;
-  color: rgb(34 211 238 / var(--tw-text-opacity));
 }
 
 .text-emerald-300 {
